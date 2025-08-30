@@ -1,0 +1,10 @@
+Show me abnormal spending this month.
+Find vendor payments that are way too high.
+Flag any invoices that look suspicious.
+I need to see financial anomalies from last quarter.
+What are the largest payments made this year?
+Detect any transactions that are outside normal patterns.
+Are there any payments that exceed the usual threshold?
+Run a report on spending outliers.
+Highlight any unusual expenditure for review.
+Identify payments that are statistical outliers.
