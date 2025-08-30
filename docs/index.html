@@ -1,7 +1,345 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>CivicBridge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicBridge - Trustworthy Civic AI Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --gov-blue: #0C4DA2;
+            --gov-red: #FF2F2F;
+            --gov-light-blue: #E6F1FF;
+            --gov-dark: #1A1A1A;
+        }
+        
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Roboto, sans-serif;
+            color: #333;
+        }
+        
+        .navbar {
+            background-color: var(--gov-blue);
+            border-bottom: 4px solid var(--gov-red);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(12, 77, 162, 0.9), rgba(12, 77, 162, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230C4DA2"/><path d="M0 0L100 100" stroke="%23FF2F2F" stroke-width="2"/><path d="M100 0L0 100" stroke="%23FF2F2F" stroke-width="2"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 5rem 0;
+        }
+        
+        .gov-button {
+            background-color: var(--gov-red);
+            border: none;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+        
+        .gov-button:hover {
+            background-color: #E50000;
+        }
+        
+        .section-title {
+            color: var(--gov-blue);
+            border-bottom: 2px solid var(--gov-red);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--gov-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .architecture-diagram {
+            background-color: var(--gov-light-blue);
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        
+        .demo-container {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--gov-blue);
+            padding: 1.5rem;
+        }
+        
+        footer {
+            background-color: var(--gov-dark);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .trust-badge {
+            background-color: var(--gov-light-blue);
+            border-left: 4px solid var(--gov-red);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-bridge"></i> CivicBridge
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="btn btn-outline-light btn-sm" href="https://github.com/jasonabanico/CivicBridge">Try Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Connecting You to Government Services with Trusted AI</h1>
+            <p class="lead mb-4">CivicBridge helps you find, understand, and access government services through accurate, transparent, and secure AI assistance.</p>
+            <a href="https://github.com/jasonabanico/CivicBridge" class="btn gov-button btn-lg">Try CivicBridge MVP (using Scratch)</a>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 trust-badge">
+                    <i class="bi bi-shield-check feature-icon"></i>
+                    <h5>Secure & Private</h5>
+                    <p>Your data is protected with government-grade security</p>
+                </div>
+                <div class="col-md-4 trust-badge">
+                    <i class="bi bi-lightbulb feature-icon"></i>
+                    <h5>Accurate Information</h5>
+                    <p>Grounded in official government sources</p>
+                </div>
+                <div class="col-md-4 trust-badge">
+                    <i class="bi bi-person-check feature-icon"></i>
+                    <h5>Human-Centered</h5>
+                    <p>Designed with all Australians in mind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">How CivicBridge Works</h2>
+            <p class="text-center mb-5">CivicBridge uses a unique trust-first architecture to provide accurate, verifiable assistance</p>
+            
+            <div class="architecture-diagram mb-5">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="feature-card card p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-chat-dots"></i>
+                            </div>
+                            <h5>1. You Ask</h5>
+                            <p>Ask your question in plain language</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="feature-card card p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h5>2. We Understand</h5>
+                            <p>Our trusted gatekeeper identifies your intent</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="feature-card card p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-database-check"></i>
+                            </div>
+                            <h5>3. We Retrieve</h5>
+                            <p>Relevant information is sourced from official databases</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="feature-card card p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-chat-square-text"></i>
+                            </div>
+                            <h5>4. You Receive</h5>
+                            <p>Get a clear, accurate answer with sources</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h3>Trust Through Transparency</h3>
+                    <p>Unlike other AI systems, CivicBridge shows you exactly how it arrived at its answers with a complete audit trail.</p>
+                    <ul>
+                        <li>No hidden algorithms or black boxes</li>
+                        <li>All answers reference official sources</li>
+                        <li>Clear confidence scoring for every response</li>
+                    </ul>
+                </div>
+				<div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="text-center">
+                        <img src="diagram.png" class="img-fluid rounded shadow" alt="CivicBridge architecture diagram showing how user input flows through the trusted gatekeeper to specialized modules and returns verified answers">
+                        <p class="text-muted mt-2"><small>CivicBridge's trust-first architecture ensures accurate, verifiable responses</small></p>
+                    </div>
+                </div>
+				</div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Government Services</h2>
+            <p class="text-center mb-5">CivicBridge helps with a wide range of government services and information needs</p>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-heart-pulse"></i> Health & Medicare</h5>
+                            <p class="card-text">Find health services, understand Medicare benefits, and locate nearby healthcare providers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-cash-coin"></i> Payments & Support</h5>
+                            <p class="card-text">Information about Centrelink payments, eligibility requirements, and how to apply for support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-house-door"></i> Housing & Property</h5>
+                            <p class="card-text">Get help with property regulations, first home buyer schemes, and rental assistance programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-briefcase"></i> Business & Employment</h5>
+                            <p class="card-text">Navigate business regulations, licensing requirements, and employment laws.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">See CivicBridge in Action</h2>
+            
+            <div class="demo-container mb-5">
+                <h4>Example Interaction</h4>
+                <div class="d-flex mb-3">
+                    <div class="flex-shrink-0">
+                        <i class="bi bi-person-circle me-2" style="font-size: 1.5rem;"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <p class="mb-1"><strong>User:</strong> "I lost my job last week. What help can I get?"</p>
+                        <p class="mb-1"><strong>Intent identified:</strong> Employment support (98% confidence)</p>
+                        <p class="mb-0"><strong>Sources used:</strong> Services Australia, Department of Employment and Workplace Relations</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex">
+                    <div class="flex-shrink-0">
+                        <i class="bi bi-robot me-2" style="font-size: 1.5rem;"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <p class="mb-1"><strong>CivicBridge:</strong> "I'm sorry to hear about your job loss. Here's support you may be eligible for:</p>
+                        <ul>
+                            <li>JobSeeker Payment - Financial support while looking for work</li>
+                            <li>Workforce Australia - Employment services to help find new opportunities</li>
+                            <li>Utility Relief Grant Scheme - Assistance with energy bills</li>
+                        </ul>
+                        <p class="mb-0">Would you like more information about any of these services?"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>CivicBridge</h5>
+                    <p>A trustworthy Civic AI platform, integrated with Australian government agencies.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="https://hackerspace.govhack.org/projects/civicbridge">GovHack Hackerspace</a></li>
+                        <li><a href="#">YouTube Video</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 CivicBridge - Trustworthy Civic AI Platform</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
