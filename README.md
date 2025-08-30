@@ -2,7 +2,7 @@
 
 ## Running CivicBridge Scratch app
 
-- Download the Scratch file from [https://github.com/jasonabanico/CivicBridge/src/CivicBridge.sb3].
+- Download the CivicBridge Scratch file. [https://github.com/jasonabanico/CivicBridge/raw/refs/heads/main/src/CivicBridge.sb3]
 - Go to https://machinelearningforkids.co.uk/scratch/
 - Select File > Load from your computer.
 - Load the downloaded Scratch file "CivicBridge.sb3".
