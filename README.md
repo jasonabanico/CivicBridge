@@ -1,6 +1,6 @@
 # CivicBridge
 
-## Running CivicBridge Scratch app
+## Running the CivicBridge Scratch app
 
 - Download the CivicBridge Scratch file. [https://github.com/jasonabanico/CivicBridge/raw/refs/heads/main/src/CivicBridge.sb3]
 - Go to https://machinelearningforkids.co.uk/scratch/
