@@ -1,6 +1,6 @@
 # CivicBridge
 
-CivicBridge is a project developed for GovHack 2025, Australia's largest open data hackathon. This prototype demonstrates how intent-based AI can deliver accurate, trustworthy, and auditable access to government services and information. Focusing on a deterministic approach rather than generative AI, CivicBridge aims to bridge the gap between complex public datasets and citizens' needs, addressing challenges including service navigation, regulatory compliance, data interrogation, and community support. Explore our project to see how we're rethinking AI for public good.
+CivicBridge is a project developed for GovHack 2025, Australia's largest open data hackathon. This prototype demonstrates how intent-based AI can deliver accurate, trustworthy, and auditable access to government services and information. Focusing on intent-based deterministic approach rather than relying solely on generative AI, CivicBridge aims to bridge the gap between complex public datasets and citizens' needs, addressing challenges including service navigation, regulatory compliance, data interrogation, and community support. Explore our project to see how we're rethinking AI for public good.
 
 GovHack Hackerspace: https://hackerspace.govhack.org/projects/civicbridge
 
